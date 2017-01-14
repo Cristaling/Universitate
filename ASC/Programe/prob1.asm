@@ -6,7 +6,7 @@ data segment
 	readChars db ?
 	fileName db 12 dup(?)
 	fileHandle dw ?
-	buffer db 100 dup(?)
+	buffer db 11 dup(?)
 	readBuffer dw ?
 data ends
 code segment
@@ -41,7 +41,7 @@ start:
 	repeta:
 		mov ah, 3Fh
 		mov bx, fileHandle
-		mov cx, 100
+		mov cx, 10
 		mov dx, offset buffer
 		int 21h
 		
@@ -54,7 +54,7 @@ start:
 		int 21h
 		
 		mov ax, readBuffer
-		cmp ax, 100
+		cmp ax, 10
 		je repeta
 	
 	mov ax, 4C00h
