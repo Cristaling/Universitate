@@ -1,0 +1,51 @@
+Nota Finala
+	Examen Scris 60%
+	Proiect 20%
+	Seminar 20%
+		Lucrare Scrisa 50%
+		Stagiu Proiect 10%
+		Activitate 40%
+
+SDA Desc & Cerinte PDF
+
+	TAD Containere
+	
+		T - Element
+			
+			Atribuire "<-"
+			Egalare "="
+			
+		T - Comparabil (extinde Element)
+		
+			Comparatie [">","<",">=","<="]
+		
+	TAD Colectie
+	
+		- O multime, dar elementele nu sunt distincte
+		- Nu conteaza ordinea elementelor
+		- Nu exista operatii cu pozitii
+	
+	Domeniu
+	
+		Multimea colectiilor cu elemente T
+		
+	Interfata
+	
+		Operatii(Pot exista dubluri):
+			
+			C  = colectia initiala
+			C' = colectia rezultanta 
+			
+			- Adaugare 		C' = C (+) e
+			- Stergere 		C' = C (-) e
+			- Cautare  		boolean = e apartine C
+			- Dimensiune 	nr = |C|
+			- Creaza 		C' = colectie noua
+			- Distruge 		C este distrus
+			- Iterator
+				
+				- Element 	e = elementul de la adresa iteratorului
+				- Urmator 	it = adresa urmatorului element din colectie
+				- Creaza	it = adresa la primul element din colectia data C
+			
+			
